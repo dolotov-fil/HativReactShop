@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from "react-native";
+import Header from "./crs/pages/Header";
+import Catigories from "./crs/pages/Catigories";
+import Popular from "./crs/pages/Popylar";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View
+      style={{
+        padding: 24,
+        paddingTop: 55,
+        paddingBottom: 75,
+        backgroundColor: "#F1F1F1",
+        
+      }}
+    >
+      <Header />
+      <Catigories />
+      <Popular />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
